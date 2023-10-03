@@ -1,0 +1,276 @@
+.propertyContainer {
+  margin-top: 2vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #edf0f6;
+}
+
+/* Header Styles */
+header {
+  /* background-color: #f0f5fb; */
+  color: #fff;
+  width: 90%;
+  margin: 50px auto;
+  border-radius: 15px;
+  padding: 15px 20px;
+  /* box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.139); */
+  backdrop-filter: blur(10px);
+  /* margin-bottom: 50px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Search Bar Styles */
+input[type="text"] {
+  width: 30%;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  color: black;
+}
+
+/* Main Content Styles */
+main {
+  width: 90%;
+  margin: auto;
+}
+
+/* Property List Styles */
+.property-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.property-card {
+  width: calc(33.33% - 20px);
+  margin: 0 5px;
+  padding: 7px;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.15);
+  background-color: #f0f5fb;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+p {
+  margin-top: 5px;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #f8f8f8;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.151);
+}
+
+button.active {
+  background-color: #f5f5f5;
+}
+
+button:disabled {
+  background-color: #dedddd;
+  cursor: not-allowed;
+}
+
+.image-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  height: 100%;
+  border-radius: 20px;
+}
+
+.property-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.top,
+.bottom {
+  color: #3e3e3e;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  /* margin-left: 20px; */
+}
+
+.rent {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+}
+.rent .for-rent{
+  color: darkblue;
+  font-weight: 600;
+  border-radius: 40px;
+  padding: 10px 15px;
+}
+
+
+.line {
+  margin: auto;
+  width: 90%;
+  background-color: rgb(163, 163, 163);
+  height: 0.1px;
+}
+
+.price {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  font-weight: 700;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .rent {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+} */
+
+.heart {
+  padding: 5px;
+  background-color: #daeafa;
+  border-radius: 10px;
+}
+
+.read-more {
+  padding: 10px 10px;
+  /* background-color: #4999ed; */
+  text-decoration: none;
+  border-radius: 40px;
+  color: black;
+  border: solid rgb(2, 2, 195) 1px;
+  margin: 5px 0px ;
+  cursor: pointer;
+  color: rgb(2, 2, 195);
+}
+
+.year {
+  padding: 1px 10px;
+  border: dashed #4998ed83;
+  border-radius: 40px;
+}
+
+.property-name h2 {
+  font-size: 1.5vw;
+}
+
+.page-numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  border-radius: 40px;
+  padding: 0px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.148);
+}
+
+.ammount {
+  font-size: 1.4em;
+  color: rgb(0, 0, 207);
+}
+.city{
+  padding: 15px;
+  border-radius: 40px;
+  margin: auto ;
+
+}
+.city-buttons{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.city-active{
+  background: #4999ed;
+  color: white;
+}
+.show-more{
+  margin: auto;
+  padding: 15px 30px;
+    background-color: #4999ed;
+    border-radius: 40px;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 20PX;
+}
+.show-more:active{
+  background-color: #137cec;
+}
+.show-more-button{
+  display: flex;
+  justify-content: center;
+}
+.type{
+  margin: 20px;
+}
+.image-details{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+.property-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 3em;
+}
